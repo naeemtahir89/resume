@@ -9,7 +9,7 @@ export default class Download extends Component {
 		return (
 			<div className="App">
 				<a href={Pdf} className={a}>
-					Naeem's Resume
+					Download
 				</a>
 				<div className="container">
 					<img src={resume} alt="fireSpot" />
