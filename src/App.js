@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Pdf from './Pdf.pdf';
+import { a } from './App.css';
+import resume from './Resume.jpg';
+
+export default class Download extends Component {
+	render() {
+		return (
+			<div className="App">
+				<a href={Pdf} className={a}>
+					Naeem's Resume
+				</a>
+				<div className="container">
+					<img src={resume} alt="fireSpot" />
+				</div>
+			</div>
+		);
+	}
 }
-
-export default App;
